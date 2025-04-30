@@ -104,13 +104,15 @@ A cutting-edge application designed to simplify and optimize cryptocurrency tax 
 ### Installation
 
 1. Clone the repository
-\`\`\`bash
+
+```shell
 git clone https://github.com/harshdev2909/onchain-tax-optimizer.git
 cd onchain-tax-optimizer
-\`\`\`
+```
 
 2. Install dependencies
-\`\`\`bash
+
+```shell
 # Install frontend dependencies
 cd frontend
 npm install
@@ -118,24 +120,28 @@ npm install
 # Install backend dependencies
 cd ../backend
 npm install
-\`\`\`
+```
 
 3. Set up environment variables
-\`\`\`bash
-# Frontend (.env.local)
-NEXT_PUBLIC_BASE_NETWORK_URL=
-NEXT_PUBLIC_MINIKIT_API_KEY=
 
-# Backend (.env)
-MONGODB_URI=
-REDIS_URL=
-OPENAI_API_KEY=
-ZAPPER_API_KEY=
-CHAINLINK_NODE_URL=
-\`\`\`
+Create `.env.local` in the frontend directory:
+```plaintext
+NEXT_PUBLIC_BASE_NETWORK_URL=your_base_network_url
+NEXT_PUBLIC_MINIKIT_API_KEY=your_minikit_api_key
+```
+
+Create `.env` in the backend directory:
+```plaintext
+MONGODB_URI=your_mongodb_uri
+REDIS_URL=your_redis_url
+OPENAI_API_KEY=your_openai_api_key
+ZAPPER_API_KEY=your_zapper_api_key
+CHAINLINK_NODE_URL=your_chainlink_node_url
+```
 
 4. Start the development servers
-\`\`\`bash
+
+```shell
 # Start frontend
 cd frontend
 npm run dev
@@ -143,7 +149,7 @@ npm run dev
 # Start backend
 cd ../backend
 npm run dev
-\`\`\`
+```
 
 ## 📱 Usage
 
